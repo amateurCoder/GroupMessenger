@@ -14,6 +14,8 @@ public class Resources {
 	static int messageCount=0;
 	static int proposedSequence=0;
 	static int agreedSequence=0;
+	
+	static int providerCount = 0;
 
 	public static int getMessageCount() {
 		return messageCount;
