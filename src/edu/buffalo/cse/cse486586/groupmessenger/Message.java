@@ -1,6 +1,7 @@
 package edu.buffalo.cse.cse486586.groupmessenger;
 
 import java.io.Serializable;
+import java.util.Map;
 
 public class Message implements Serializable {
 
@@ -10,6 +11,15 @@ public class Message implements Serializable {
 	private int sequenceNumber;
 	private MessageType messageType;
 	private String messageId;
+	private Map<String, Integer> causalOrderingMap;
+
+	public Map<String, Integer> getCausalOrderingMap() {
+		return causalOrderingMap;
+	}
+
+	public void setCausalOrderingMap(Map<String, Integer> causalOrderingMap) {
+		this.causalOrderingMap = causalOrderingMap;
+	}
 
 	public String getMessageId() {
 		return messageId;
